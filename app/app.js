@@ -11,7 +11,8 @@ var apps = new Apps();
 
 var AppListView = Backbone.View.extend({
   events: {
-    'click .close': 'onClickClose'
+    'click .close': 'onClickClose',
+    'click a': 'onClickA'
   },
 
   initialize: function() {
@@ -32,6 +33,12 @@ var AppListView = Backbone.View.extend({
     var appId = $(event.target).data('app-id');
 
     apps.get(appId).destroy();
+  },
+
+  onClickA: function(event) {
+    event.preventDefault();
+
+    window.location = $(event.target).attr('href');
   }
 });
 
@@ -57,6 +64,11 @@ var NewAppView = Backbone.View.extend({
     $('#alert').html('<div class="alert fade in"><button class="close"' +
       'data-dismiss="alert">&times;</button><p>Application added.</p><p>' +
       '<a href="' + url + '" class="btn">View it now</a></p></div>');
+
+    $('#alert a').on('click', function(event) {
+      event.preventDefault();
+      window.location = url;
+    });
   }
 });
 
