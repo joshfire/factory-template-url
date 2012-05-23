@@ -1,0 +1,32 @@
+{
+  "name": "template-url",
+  "fullName": "Joshfire Template Tester",
+  "version": "0.0.1",
+  "description": "Test apps in a phonegap webview.",
+  "keywords": [
+    "test"
+  ],
+  "joshfire": {
+    "images": {
+      "small": "marketing/small.jpg",
+      "big": "marketing/big.jpg"
+    },
+    "devices": [
+      {
+        "devices": "phone",
+        "startfile": "app/index.html",
+        "images": "marketing/small.jpg"
+      },
+      {
+        "devices": "tablet",
+        "startfile": "app/index.html",
+        "images": "marketing/small.jpg"
+      },
+      {
+        "devices": "tv",
+        "startfile": "app/index.html",
+        "images": "marketing/small.jpg"
+      }
+    ]
+  }
+}
