@@ -13,17 +13,7 @@
     },
     "devices": [
       {
-        "devices": "phone",
-        "startfile": "app/index.html",
-        "images": "marketing/small.jpg"
-      },
-      {
-        "devices": "tablet",
-        "startfile": "app/index.html",
-        "images": "marketing/small.jpg"
-      },
-      {
-        "devices": "tv",
+        "devices": "*",
         "startfile": "app/index.html",
         "images": "marketing/small.jpg"
       }
