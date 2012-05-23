@@ -1,7 +1,7 @@
 {
   "name": "template-url",
   "fullName": "Joshfire Template Tester",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Test apps in a phonegap webview.",
   "keywords": [
     "test"
